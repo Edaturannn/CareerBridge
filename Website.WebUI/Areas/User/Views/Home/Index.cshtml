@@ -1,0 +1,32 @@
+﻿@{
+    var user = ViewBag.UserName as User;
+}
+<div class="container">
+    <h1>Hoşgeldiniz</h1>
+    <h1>@user.FullName</h1>
+
+    <br />
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body d-flex justify-content-center align-items-center">
+                    <a href="/User/Profile/Index" class="btn btn-primary" style="height:50px; width:200px; text-align:center; display: flex; align-items: center; justify-content: center;"><b>Profilim</b></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body d-flex justify-content-center align-items-center">
+                    <a href="/User/Consulting/Index" class="btn btn-primary" style="height:50px; width:200px; text-align:center; display: flex; align-items: center; justify-content: center;"><b>Danışmanlık</b></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card">
+                <div class="card-body d-flex justify-content-center align-items-center">
+                    <a href="/User/Contact/Index" class="btn btn-primary" style="height:50px; width:200px; text-align:center; display: flex; align-items: center; justify-content: center;"><b>İletişim</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+﻿@model DenemeDto
+<header class="text-white text-center py-5">
+    <div class="container">
+        <h4 class="display-6 fw-bold">Profile</h4>
+    </div>
+</header>
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="Name">Ad</label>
+        <input type="text" class="form-control" id="Fullname" name="Fullname"  value="@Model.FullName"  />
+    </div>
+
+
+    <div class="form-group">
+        <label for="Email">E-posta</label>
+        <input type="email" class="form-control" id="Email" name="Email"  value="@Model.Email" />
+    </div>
+
+
+    <div class="form-group">
+        <label for="Department">Okuduğunuz Bölümü Seçiniz</label>
+        <select class="form-control" id="Department" name="Department">
+            <option value="@Model.Department">@Model.Department</option>
+            <option value="Yönetim Bilişim Sistemleri">Yönetim Bilişim Sistemleri</option>
+            <option value="İşletme">İşletme</option>
+            <option value="Maliye">Maliye</option>
+            <option value="Siyasi Bilimler">Siyasi Bilimler</option>
+            <option value="İktisat">İktisat</option>
+        </select>
+    </div>
+
+
+    <div class="form-group">
+        <label for="Class">Okuduğunuz Sınıfı Seçiniz</label>
+        <select class="form-control" id="Class" name="Class">
+            <option value="@Model.Class">@Model.Class</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Ekle</button>
+</form>
+

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @await Component.InvokeAsync("_HeadViewComponentLayout")
+</head>
+<body>
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <div id="main-wrapper">
+        @await Component.InvokeAsync("_NavbarViewComponentLayout")
+        @await Component.InvokeAsync("_SidebarViewComponentLayout")
+        <div class="content-body">
+
+            <div class="container-fluid mt-3">
+                @RenderBody()
+            </div>
+            <!-- #/ container -->
+        </div>
+        @await Component.InvokeAsync("_FooterViewComponentLayout")
+    </div>
+    @await Component.InvokeAsync("_ScriptViewComponentLayout")
+</body>
+</html>

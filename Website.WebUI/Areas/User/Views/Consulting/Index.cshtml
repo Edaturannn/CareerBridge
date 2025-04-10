@@ -1,0 +1,32 @@
+﻿@model ResultChatDto
+
+<div class="chat-container">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            Kariyer Danışmanlık Uygulaması
+        </div>
+        <div class="card-body chat-box" id="chatBox">
+            @if (ViewBag.UserMessage != null)
+            {
+                <div class="message">
+                    <strong class="user">Siz:</strong> @Html.Raw(ViewBag.UserMessage)
+                </div>
+            }
+
+            @if (ViewBag.ChatResponse != null)
+            {
+                <div class="message">
+                    <strong class="ai">Danışman:</strong> @Html.Raw(ViewBag.ChatResponse)
+                </div>
+            }
+        </div>
+        <div class="card-footer">
+            <form asp-action="Index" method="post">
+                <div class="input-group">
+                    <input asp-for="Question" class="form-control" placeholder="Mesajınızı yazın..." required />
+                    <button type="submit" class="btn btn-primary">Gönder</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

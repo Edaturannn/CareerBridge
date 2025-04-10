@@ -1,0 +1,51 @@
+﻿@model List<ResultUserDto>
+<div class="col-12">
+    <div class="card mb-4">
+        <div class="card-header pb-0">
+            <h4>Kayıtlı Kişiler</h4>
+        </div>
+        <div class="card-body px-0 pt-0 pb-2">
+            <div class="table-responsive p-0">
+                <table class="table align-items-center mb-0">
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <div class="d-flex px-2 py-1">
+
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="mb-0 text-sm">@item.FullName</h6>
+                                            <p class="text-xs text-secondary mb-0">@item.Email</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p class="text-xs font-weight-bold mb-0">@item.Role</p>
+                                </td>
+
+                                <td class="align-middle text-center">
+                                    <span class="text-secondary text-xs font-weight-bold">@item.CreatedAt</span>
+                                </td>
+                                <td class="align-middle">
+                                    <a href="/Admin/Users/Delete/@item.Id" class="text-danger font-weight-bold text-xs" data-toggle="tooltip">
+                                        Sil
+                                    </a>
+                                </td>
+                                <td class="align-middle">
+                                    <a href="/Admin/Users/Update/@item.Id" class="text-warning font-weight-bold text-xs" data-toggle="tooltip">
+                                        Güncelle
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+                <a href="/Admin/Users/Create" class="btn btn-info" data-toggle="tooltip" >
+                    Yeni Kullanıcı Ekle
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

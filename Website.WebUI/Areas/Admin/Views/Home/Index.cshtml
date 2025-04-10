@@ -1,0 +1,43 @@
+﻿@{
+    var user = ViewBag.UserName as User;
+}
+<div class="col-12">
+    <div class="card mb-4">
+        <div class="card-header pb-0">
+            <h4>Hoşgeldiniz</h4>
+            <h5>@user.FullName</h5>
+        </div>
+        <br />
+        <div class="card-body px-0 pt-0 pb-2">
+            <div class="table-responsive p-0">
+                <table class="table align-items-center mb-0">
+                    <tbody>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body d-flex justify-content-center align-items-center">
+                                        <a href="/Admin/Users/Index" class="btn btn-primary" style="height:50px; width:200px; text-align:center; display: flex; align-items: center; justify-content: center;"><b>Kullanıcılar</b></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body d-flex justify-content-center align-items-center">
+                                        <a href="/Admin/Consulting/Index" class="btn btn-primary" style="height:50px; width:200px; text-align:center; display: flex; align-items: center; justify-content: center;"><b>Danışmanlık</b></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card">
+                                    <div class="card-body d-flex justify-content-center align-items-center">
+                                        <a href="/Admin/Contacts/Index" class="btn btn-primary" style="height:50px; width:200px; text-align:center; display: flex; align-items: center; justify-content: center;"><b>İletişim</b></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

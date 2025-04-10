@@ -1,0 +1,29 @@
+﻿@model CreateContactDto
+@{
+    var user = ViewBag.UserID as User;
+}
+<header class="text-white text-center py-5">
+    <div class="container">
+        <h4 class="display-6 fw-bold">Bizimle İletişim Kurunuz</h4>
+    </div>
+</header>
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+     
+        <input type="hidden" class="form-control" id="UserId" name="UserId" required value="@user.Id" readonly />
+    </div>
+
+
+    <div class="form-group">
+        <label for="Subject">Konu</label>
+        <input type="text" class="form-control" id="Subject" name="Subject" required />
+    </div>
+
+
+    <div class="form-group">
+        <label for="Message">Mesaj</label>
+        <textarea type="text" class="form-control" id="Message" name="Message" required  style="height: 145px"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Gönder</button>
+</form>
+

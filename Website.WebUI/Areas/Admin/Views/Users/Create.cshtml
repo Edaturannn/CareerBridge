@@ -1,0 +1,33 @@
+﻿@model RegisterDto
+<div class="col-12">
+    <div class="card mb-4">
+        <div class="card-header pb-0">
+            <h4>Yeni Kullanıcı Ekleme</h4>
+            <h5></h5>
+        </div>
+        <br />
+        <div class="container">
+            <div class="table-responsive p-0">
+                <table class="table align-items-center mb-0">
+                    <tbody>
+                        <form class="mt-5 mb-5 login-input" method="post" asp-controller="Users" asp-action="Create">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="text" placeholder="Adınızı giriniz" name="Username">
+                                <span class="text-danger" asp-validation-for="Username"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="E-posta adresinizi girin" name="Email">
+                                <span class="text-danger" asp-validation-for="Email"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password" placeholder="Şifrenizi girin" name="Password">
+                                <span class="text-danger" asp-validation-for="Password"></span>
+                            </div>
+                            <button type="submit" class="btn btn-info">Kayıt Et</button>
+                        </form>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
