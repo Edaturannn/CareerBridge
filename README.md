@@ -38,7 +38,7 @@ CareerBridge
 
 — Asp.Net Core API
 
-- OpenAI API 
+— OpenAI API 
 
 — Swagger
 
