@@ -1,5 +1,5 @@
 
-<b>CareerBridge</b>
+<h1>CareerBridge</h1>
 
 - Auto Mapper
 
@@ -44,11 +44,11 @@
 - Repository Design Pattern
 
 
-<b>Projenin Amacı:</b>
+<h4>Projenin Amacı:</h4>
 
 Bu projenin temel amacı, kullanıcıların güvenli bir şekilde kayıt olarak sisteme giriş yapmasını ve rollerine göre yönlendirilmesini sağlamaktır. Kullanıcılar, sisteme giriş yaptıktan sonra profil bilgilerini yönetebilir, OpenAI ChatGPT servisi ile entegre çalışan interaktif kariyer danışmanlık modülü sayesinde mesleki yönelimleri hakkında destek alabilir ve kişiselleştirilmiş bir kariyer yol haritası oluşturabilirler. Böylece sistem, yapay zeka destekli danışmanlık yaklaşımı ile bireylerin kariyer planlamasını daha etkili hale getirmeyi hedeflemektedir.
 
-<b>Projenın Tanıtımı:</b>
+<h4>Projenın Tanıtımı:</h4>
 
 Bu projeyi ASP.NET Core 7.0, Entity Framework Core, Katmanlı Mimari (N-Tier Architecture), Code-First yaklaşımı ve RESTful API prensipleri doğrultusunda geliştirdim. Uygulamanın ölçeklenebilirliğini ve taşınabilirliğini artırmak amacıyla Docker konteyner teknolojisini kullandım. PostgreSQL veritabanını resmi Docker imajı ile izole bir konteynerde çalıştırarak, uygulamanın farklı ortamlarda tutarlı bir şekilde çalışmasını sağladım. Bu sayede veritabanı erişimi hem daha güvenli hale getirildi hem de deployment süreçleri sadeleştirildi.
 
