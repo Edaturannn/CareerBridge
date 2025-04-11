@@ -1,3 +1,65 @@
+
+<b>CareerBridge</b>
+
+- Auto Mapper
+
+- Asp.Net Core API
+
+- OpenAI API 
+
+- Swagger
+
+- Postman
+
+- Docker
+
+- PostgreSQL
+
+- SMTP Mail Service
+
+- DBeaver
+
+- API Consume
+
+- Json Web Token
+
+- Argon2
+
+- Login
+
+- Register
+
+- Asp.Net Core 7.0
+
+- Fluent Validation
+
+- N Tier Architecture
+
+- Dto Layer
+
+- MVC
+
+- Entity Framework Core
+
+- Repository Design Pattern
+
+
+<b>Projenin Amacı:</b>
+
+Bu projenin temel amacı, kullanıcıların güvenli bir şekilde kayıt olarak sisteme giriş yapmasını ve rollerine göre yönlendirilmesini sağlamaktır. Kullanıcılar, sisteme giriş yaptıktan sonra profil bilgilerini yönetebilir, OpenAI ChatGPT servisi ile entegre çalışan interaktif kariyer danışmanlık modülü sayesinde mesleki yönelimleri hakkında destek alabilir ve kişiselleştirilmiş bir kariyer yol haritası oluşturabilirler. Böylece sistem, yapay zeka destekli danışmanlık yaklaşımı ile bireylerin kariyer planlamasını daha etkili hale getirmeyi hedeflemektedir.
+
+<b>Projenın Tanıtımı:</b>
+
+Bu projeyi ASP.NET Core 7.0, Entity Framework Core, Katmanlı Mimari (N-Tier Architecture), Code-First yaklaşımı ve RESTful API prensipleri doğrultusunda geliştirdim. Uygulamanın ölçeklenebilirliğini ve taşınabilirliğini artırmak amacıyla Docker konteyner teknolojisini kullandım. PostgreSQL veritabanını resmi Docker imajı ile izole bir konteynerde çalıştırarak, uygulamanın farklı ortamlarda tutarlı bir şekilde çalışmasını sağladım. Bu sayede veritabanı erişimi hem daha güvenli hale getirildi hem de deployment süreçleri sadeleştirildi.
+
+Frontend tarafında, kullanıcı deneyimini ön planda tutan, duyarlı ve modern bir arayüz elde etmek amacıyla Bootstrap kütüphanesinin hazır bir temasını entegre ettim. Kimlik doğrulama ve yetkilendirme işlemlerinde, JWT (JSON Web Token) tabanlı authentication mekanizmasını uyguladım. Kullanıcı şifrelerini Argon2 hashing algoritmasıyla güvenli bir şekilde şifreleyerek sakladım. Token’ların istemci tarafında güvenli bir şekilde tutulabilmesi için HttpOnly ve Secure flag’leri aktif edilmiş Session Cookie yapısını tercih ederek, XSS ve Token Hijacking gibi saldırılara karşı koruma sağladım.
+
+Uygulamada e-posta tabanlı kimlik doğrulama işlemlerini desteklemek adına SMTP protokolüyle çalışan bir mail servisi entegre ettim. Kullanıcılar “Şifremi Unuttum” özelliği sayesinde sistemde kayıtlı e-posta adreslerine tek kullanımlık güvenli şifre sıfırlama token’ı içeren bağlantılar alabilmekte ve yeni şifre belirleyerek hesaplarına güvenli bir şekilde erişebilmektedir.
+
+Projeye dış servis entegrasyonu kapsamında OpenAI’nin ChatGPT API hizmetini dahil ettim. Bu servis için backend katmanında özel bir API Controller tanımladım. Kullanıcılardan gelen mesajlar, HttpClient aracılığıyla OpenAI Chat Completion API’sine yönlendirilmekte ve alınan yapay zeka yanıtları UI tarafında gerçek zamanlı olarak görüntülenmektedir. ASP.NET MVC mimarisiyle hazırladığım kullanıcı arayüzü sayesinde, kullanıcılar ChatGPT tabanlı akıllı kariyer danışmanlığı hizmetinden faydalanabilmektedir.
+
+
+
 <img width="1439" alt="Ekran Resmi 2025-04-10 19 09 10" src="https://github.com/user-attachments/assets/549caf5a-e76b-4127-9cd1-fd1ba3f6d5f3" />
 
 <img width="1439" alt="Ekran Resmi 2025-04-10 19 09 20" src="https://github.com/user-attachments/assets/25a60d1b-2d54-47fe-8c83-faa6240f88fc" />
@@ -29,68 +91,6 @@
 <img width="1439" alt="Ekran Resmi 2025-04-10 19 22 27" src="https://github.com/user-attachments/assets/778441ef-80bb-496c-b3fe-e39e716af551" />
 
 <img width="1439" alt="Ekran Resmi 2025-04-10 19 21 48" src="https://github.com/user-attachments/assets/018c005b-bae7-46cc-8224-44bc8a320cf5" />
-
-
-
-CareerBridge
-
-— Auto Mapper
-
-— Asp.Net Core API
-
-— OpenAI API 
-
-— Swagger
-
-— Postman
-
-— Docker
-
-— PostgreSQL
-
-— SMTP Mail Service
-
-— DBeaver
-
-— API Consume
-
-— Json Web Token
-
-— Argon2
-
-— Login
-
-— Register
-
-— Asp.Net Core 7.0
-
-— Fluent Validation
-
-— N Tier Architecture
-
-— Dto Layer
-
-— MVC
-
-— Entity Framework Core
-
-— Repository Design Pattern
-
-
-Projenin Amacı:
-
-Bu projenin temel amacı, kullanıcıların güvenli bir şekilde kayıt olarak sisteme giriş yapmasını ve rollerine göre yönlendirilmesini sağlamaktır. Kullanıcılar, sisteme giriş yaptıktan sonra profil bilgilerini yönetebilir, OpenAI ChatGPT servisi ile entegre çalışan interaktif kariyer danışmanlık modülü sayesinde mesleki yönelimleri hakkında destek alabilir ve kişiselleştirilmiş bir kariyer yol haritası oluşturabilirler. Böylece sistem, yapay zeka destekli danışmanlık yaklaşımı ile bireylerin kariyer planlamasını daha etkili hale getirmeyi hedeflemektedir.
-
-Projenın Tanıtımı:
-
-Bu projeyi ASP.NET Core 7.0, Entity Framework Core, Katmanlı Mimari (N-Tier Architecture), Code-First yaklaşımı ve RESTful API prensipleri doğrultusunda geliştirdim. Uygulamanın ölçeklenebilirliğini ve taşınabilirliğini artırmak amacıyla Docker konteyner teknolojisini kullandım. PostgreSQL veritabanını resmi Docker imajı ile izole bir konteynerde çalıştırarak, uygulamanın farklı ortamlarda tutarlı bir şekilde çalışmasını sağladım. Bu sayede veritabanı erişimi hem daha güvenli hale getirildi hem de deployment süreçleri sadeleştirildi.
-
-Frontend tarafında, kullanıcı deneyimini ön planda tutan, duyarlı ve modern bir arayüz elde etmek amacıyla Bootstrap kütüphanesinin hazır bir temasını entegre ettim. Kimlik doğrulama ve yetkilendirme işlemlerinde, JWT (JSON Web Token) tabanlı authentication mekanizmasını uyguladım. Kullanıcı şifrelerini Argon2 hashing algoritmasıyla güvenli bir şekilde şifreleyerek sakladım. Token’ların istemci tarafında güvenli bir şekilde tutulabilmesi için HttpOnly ve Secure flag’leri aktif edilmiş Session Cookie yapısını tercih ederek, XSS ve Token Hijacking gibi saldırılara karşı koruma sağladım.
-
-Uygulamada e-posta tabanlı kimlik doğrulama işlemlerini desteklemek adına SMTP protokolüyle çalışan bir mail servisi entegre ettim. Kullanıcılar “Şifremi Unuttum” özelliği sayesinde sistemde kayıtlı e-posta adreslerine tek kullanımlık güvenli şifre sıfırlama token’ı içeren bağlantılar alabilmekte ve yeni şifre belirleyerek hesaplarına güvenli bir şekilde erişebilmektedir.
-
-Projeye dış servis entegrasyonu kapsamında OpenAI’nin ChatGPT API hizmetini dahil ettim. Bu servis için backend katmanında özel bir API Controller tanımladım. Kullanıcılardan gelen mesajlar, HttpClient aracılığıyla OpenAI Chat Completion API’sine yönlendirilmekte ve alınan yapay zeka yanıtları UI tarafında gerçek zamanlı olarak görüntülenmektedir. ASP.NET MVC mimarisiyle hazırladığım kullanıcı arayüzü sayesinde, kullanıcılar ChatGPT tabanlı akıllı kariyer danışmanlığı hizmetinden faydalanabilmektedir.
-
 
 
 
